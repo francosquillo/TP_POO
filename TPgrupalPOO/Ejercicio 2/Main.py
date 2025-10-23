@@ -18,14 +18,14 @@ class carganotas:
                 nota_agregar = nota(catedra_agregar, nota_agregar)
                 alumno.cargar_notas(nota_agregar)
 
-                salir = int(input("Ingrese 1 si desea salir de la carga de notas: "))
-                if salir == 1:
+                salir = (input("Ingrese 1 si desea salir de la carga de notas: "))
+                if salir == "1":
                     break
 
             self.lista_alumnos.append(alumno)
 
-            salir = int(input("Ingrese 1 si desea salir de la carga de alumnos: "))
-            if salir == 1:
+            salir = (input("Ingrese 1 si desea salir de la carga de alumnos: "))
+            if salir == "1":
                 break
 
         print("\n--- LISTA DE ALUMNOS ---")
